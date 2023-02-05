@@ -5,7 +5,7 @@ If you wish, you can either:
 
 - read the tasks below, try to solve them yourself, and then compare them with the example solutions, or
 - read the example solutions right away, or
-- completely ignore this catalogue, as it is not directly related to our subject and is provided as a curiosity.
+- completely ignore this directory, as it is not directly related to our subject and is provided as a curiosity.
 
 On the other hand, a useful exercise would be to consider whether you can solve these tasks imperatively in Scala.
 Especially the third one may prove challenging, because it uses a custom data structure.
@@ -47,10 +47,10 @@ data ChristmasTree
 ```
 and similarly in Scala as:
 ```scala
-  sealed trait ChristmasTree
-  case class Tip() extends ChristmasTree
-  case class Twig(subtree: ChristmasTree) extends ChristmasTree
-  case class Branching(subtree1: ChristmasTree, subtree2: ChristmasTree) extends ChristmasTree
+sealed trait ChristmasTree
+case class Tip() extends ChristmasTree
+case class Twig(subtree: ChristmasTree) extends ChristmasTree
+case class Branching(subtree1: ChristmasTree, subtree2: ChristmasTree) extends ChristmasTree
   ```
 
 Candles are to be put at the nodes of the tree.
@@ -58,6 +58,9 @@ We say a tree is **well illuminated** if all the edges have candles on at least 
 Write a function `wellIlluminated` which, given a tree, computes the minimal number of candles required to make it well illuminated.
 
 **Example**
+```haskell
+tree = Twig $ Twig $ Twig $ Twig Tip
+```
 ```
 █═══█
     ║
@@ -76,10 +79,13 @@ Above tree requires two candles:
 
 
 ------
-You can run the example code here:
+## Solutions
+
+You can find solutions in files [Main.hs](https://github.com/radek-univ/Tutorials/blob/main/src/miscellaneous/functionalProgramsInScala/Main.hs) and [Main.scala](https://github.com/radek-univ/Tutorials/blob/main/src/miscellaneous/functionalProgramsInScala/Main.scala), or use the following links to execute them online:
 
 **Haskell**
 [https://replit.com/@radekpi/FunctionalProgramsInHaskell#Main.hs](https://replit.com/@radekpi/FunctionalProgramsInHaskell#Main.hs)
 
-****
+**Scala**
+[https://replit.com/@radekpi/FunctionalProgramsInScala#main.scala](https://replit.com/@radekpi/FunctionalProgramsInScala#main.scala)
 
