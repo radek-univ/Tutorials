@@ -1,0 +1,5 @@
+- Floating point arithmetic can be tricky:
+  - [https://en.wikipedia.org/wiki/Catastrophic_cancellation](https://en.wikipedia.org/wiki/Catastrophic_cancellation)
+- Why it is a good idea to use `require(...)` in Scala programs:
+  - [https://www.baeldung.com/scala/assert-vs-require](https://www.baeldung.com/scala/assert-vs-require)
+  - [https://www.reddit.com/r/scala/comments/i663kq/thoughts_on_using_requireassert_vs_throwing/](https://www.reddit.com/r/scala/comments/i663kq/thoughts_on_using_requireassert_vs_throwing/)
