@@ -131,6 +131,6 @@ The solution I came up with (slightly optimised, but perhaps not the shortest) h
 If you find a solution, please share it with me and I will update the counter below:
 
 ### BEST SIZE OF STUDENT'S SOLUTION SO FAR = 294
-### BEST SIZE OF TUTOR'S SOLUTION SO FAR = 344
+### BEST SIZE OF TUTOR'S SOLUTION SO FAR = 329 ~~344~~
 
 The challenge is open until the end of February. Good luck!
